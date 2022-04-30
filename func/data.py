@@ -1,9 +1,9 @@
 def yml (data):
       """ ==Load Raw Yaml==
       ----------------------------------------------
-      in:    YAML STRING
-      out:   DICT
+      [[YAML STRING]] -----> [[DICT]]
       ===============================================
+
       """
       import yaml
       return yaml.load(data, Loader=yaml.Loader)
