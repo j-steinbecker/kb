@@ -1,13 +1,12 @@
 def monthlypayment (P, apr, yrs):
    """
-   ----MORTGAGE PAYMENT-----------------------------------
-   Returns MONTHLY PAYMENT IN $
-   -------------------------------------------------------
-   from args:
-      >>> P     : principle
-      >>> apr   : decimal APR
-      >>> yrs   : length of term in years
-   ======================================================
+   |----MORTGAGE PAYMENT-----------------------------------
+   |                       --> Returns MONTHLY PAYMENT IN $
+   |-------------------------------------------------------
+   |   >>> P     : principle
+   |   >>> apr   : decimal APR
+   |   >>> yrs   : length of term in years
+   |======================================================
    """
       
    r = apr / 12       # MONTHLY PERCENTAGE RATE

@@ -1,14 +1,17 @@
-def yml (data):
-      """ ==Load Raw Yaml==
-      ----------------------------------------------
-      [[YAML STRING]] -----> [[DICT]]
-      ===============================================
+import datetime as dt
 
+
+def yml (data):
+      """
+      ==Load Raw Yaml==
+      ----------------------------------------------
+      [[YAML STRING]]                   --> [[DICT]]
+      ==============================================
+      >>> Data    : str [[formatted yml]]
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
       """
       import yaml
       return yaml.load(data, Loader=yaml.Loader)
-
-    
     
 def ymlFlattenDates (data):
       if type(data) == str:
@@ -22,8 +25,6 @@ def ymlFlattenDates (data):
                   for day,shift in val.items():
                         dic.update({str(yr)+"-"+str(mo)+"-"+str(day): shift})
       return dic
-
-
 
 def accumulate (Set, specialReturn= None) -> list:
    """_summary_
@@ -55,3 +56,4 @@ def accumulate (Set, specialReturn= None) -> list:
    
    if specialReturn == None:
       return accum[1:] 
+
