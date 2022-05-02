@@ -11,11 +11,11 @@ def Alligate (Drug, higherConc, lowerConc, desiredConc, Amount):
 
       hc = higherConc ; lc = lowerConc ; dc = desiredConc ; A = Amount
 
-      numer = dc - lc #"Parts-per" of the higher concentration stock
-      denom = hc - dc #"Parts-per" of the  lower concentration stock
+      numer = dc - lc                                 # PROPORTION OF FINAL FROM THE HIGHER CONC
+      denom = hc - dc                                 # PROPORTION OF FINAL FROM THE LOWER  CONC
 
-      U = round(A * numer / (numer + denom),2)
-      L = round(A * denom / (numer + denom),2)
+      U = round(A * numer / (numer + denom),2)        # UPPER CONC. VOLUME
+      L = round(A * denom / (numer + denom),2)        # LOWER CONC. VOLUME
 
 
       #  [hi]\    /numer
